@@ -1,0 +1,23 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+@import "jekyll-theme-prologue";
+
+.embedresize {
+max-width: 560px;
+margin: auto;
+}
+
+.embedresize div {
+position: relative;
+height: 0;
+padding-bottom: 56.25%;
+}
+
+.embedresize video {
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+}
