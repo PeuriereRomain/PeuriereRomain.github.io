@@ -23,6 +23,7 @@ Etapes:
 * Analyse et tri par -matière- (texture) suivant certains critères (pente, hauteur...)
 * Affichage par matière, régions
 * Calcul et affichage de la shadowMap
+* Modèle de l'eau
 
 <div style="text-align:center;">
 Affichage par régions et calcul de la shadowMap<br>
@@ -38,7 +39,19 @@ Tri et affichage par matières (textures) <br>
 <img class='image' src="assets/images/terrain/terrainmattot.png" alt="total matieres" />
 </div>
 <br>
+<p style="text-align:center;">Application de réflexion/refraction (Fresnel effect), dudv map et normal map pour la distortion.</p>
+<div class="embedresize">
+<div>
+    <video width="560" height="315" controls>
+    <source src="assets/video/water.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+</div>
+</div>
+<br>
+
 Etapes futures:
 * Modèle de lumière différent par matière (shader)
-* Ajout d'éléments dans le terrain (arbres...)
-* Mouvement, reflet de l'eau...
+* Ajout d'éléments dans le terrain (textures billboard)
+* Ajout d'une cubemap
+* Optimisation GL4+
