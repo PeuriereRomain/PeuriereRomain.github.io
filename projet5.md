@@ -34,7 +34,7 @@ Le joueur doit atterrir pour ramasser d'autres munitions.<br>
 <br>
 
 <div style="text-align:center;">
-Terrain aléatoire (et paramétrable), arbres destructibles.<br>
+Terrain aléatoire (et paramétrable), arbres destructibles, effet d'ombres (au sol).<br>
 <img class='image' src="assets/images/fightMILK/fm3.png" alt="terrain1" />
 <img class='image' src="assets/images/fightMILK/fm5.png" alt="terrain2" />
 <img class='image' src="assets/images/fightMILK/fm7.png" alt="terrain3" /><br>

@@ -12,7 +12,7 @@ order: 3
 Projet de M1 (2018).
 <h3>Buts du projet: </h3>
 * Implémenter un jeu de runner 'infini' avec un tuyau généré aléatoirement
-* Implémenter les collisions, modèle de lumière...
+* Implémenter les collisions
 
 <p style="color:green">Code: C++ / Framework OpenGL - GLSL 3.3</p>
 
@@ -30,7 +30,21 @@ Projet de M1 (2018).
 Obtenir un score maximal.<br>
 Il est possible de tourner autour du tuyau (gauche et droite) pour éviter les obstacles.<br>
 Chaque checkpoint (triple anneau jaune) rajoute un point.<br>
-Le nombre d'obstacles par chunk (entre 2 checkpoints jaunes) augmente à chaque checkpoint passé (maximum: 20).
+Le nombre d'obstacles par chunk (entre 2 checkpoints jaunes) augmente à chaque checkpoint passé.
+
+Etapes obligatoires:
+* Génération du tuyau
+* Déplacement d'un objet autour de celui-ci
+* Placement d'obstacles
+* Calcul d'intersections avec ceux-ci
+
+<p style="color:blue">Améliorations personnelles:</p>
+* Ajout d'une cubemap
+* Elements rotatifs (double-torus) suivant le tuyau (rajoute les obstacles au loin)
+* Shader de reflexion/refraction + Blinn-Phong, calcul de critères de visibilité (fog, angle...)
+* Modèle de B.Walter pour le halo de lumière du vaisseau
+* Ajout d'affichages 2D (texte)
+* Ajout d'un écran de démarrage, possibilité de relancer le jeu
 
 <div style="text-align:center;">
 <img class='image' src="assets/images/pipeRunner/pipe_start.png" alt="pipe start" />
@@ -51,12 +65,5 @@ Génération du tuyau :
 * Calcul de la courbe par algorithme de Chaikin
 * Calcul des normales et rotations des segments
 * Génération du tube grâce aux normales
-
-
-Shaders :
-* Affichage de la cubemap
-* Modèle de rendu général:<br>
-Blinn-Phong, B.Walter modifié pour le halo du vaisseau, <br>mélange de réfraction et réflexion suivant des critères de visibilité (fog et angle de vision)
-
 
 Vaisseau, checkpoints et double-torus (rajoutant les obstacles au loin) créés sous Blender.

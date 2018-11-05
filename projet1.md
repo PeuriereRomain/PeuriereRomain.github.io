@@ -17,14 +17,32 @@ Projet de M2 (2018).
 <p style="color:green">Code: C++ / OpenGL - GLSL 3.3 </p>
 <hr>
 <br>
-Etapes:
-* Découper le terrain en régions
-* Clipping des régions non visibles
+Etapes obligatoires:
+* Découper le terrain en régions -> clipping des régions visibles
 * Analyse et tri par -matière- (texture) suivant certains critères (pente, hauteur...)
 * Affichage par matière, régions
 * Calcul et affichage de la shadowMap
-* Modèle de l'eau
+* Ajouts de textures billboard (non implémenté)
+* Optimisation GL4+ ? (non implémenté)
 
+<p style="color:blue">Améliorations personnelles:</p>
+* Modèle de lumière différent par matière (shader)
+* Modèle d'eau évolué:
+    * Texture de reflexion/refraction (Fresnel effect)
+    * Distortion tiling avec une du/dv map
+    * Utilisation d'une normal map pour les reflets
+* Ajout d'une cubemap/skybox (non implémenté)
+* ...
+
+<div class="embedresize">
+<div>
+    <video width="560" height="315" controls>
+    <source src="assets/video/water.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+    </video>
+</div>
+</div>
+<br>
 <div style="text-align:center;">
 Affichage par régions et calcul de la shadowMap<br>
 <img class='image' src="assets/images/terrain/terrainregions.png" alt="regions" />
@@ -38,20 +56,3 @@ Tri et affichage par matières (textures) <br>
 <img class='image' src="assets/images/terrain/terrainmat3.png" alt="matiere3" />
 <img class='image' src="assets/images/terrain/terrainmattot.png" alt="total matieres" />
 </div>
-<br>
-<p style="text-align:center;">Application de réflexion/refraction (Fresnel effect), dudv map et normal map pour la distortion.</p>
-<div class="embedresize">
-<div>
-    <video width="560" height="315" controls>
-    <source src="assets/video/water.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-    </video>
-</div>
-</div>
-<br>
-
-Etapes futures:
-* Modèle de lumière différent par matière (shader)
-* Ajout d'éléments dans le terrain (textures billboard)
-* Ajout d'une cubemap
-* Optimisation GL4+
