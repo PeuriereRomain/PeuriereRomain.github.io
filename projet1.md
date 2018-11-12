@@ -23,7 +23,7 @@ Etapes obligatoires:
 * Affichage par matière, régions
 * Calcul et affichage de la shadowMap
 * Ajouts de textures billboard (non implémenté)
-* Optimisation GL4+ ? (non implémenté)
+* Optimisation GL4 (compute shader) (non implémenté)
 
 <p style="color:blue">Améliorations personnelles:</p>
 * Modèle de lumière différent par matière (shader)
@@ -31,13 +31,13 @@ Etapes obligatoires:
     * Texture de reflexion/refraction (Fresnel effect)
     * Distortion tiling avec une du/dv map
     * Utilisation d'une normal map pour les reflets
-* Ajout d'une cubemap/skybox (non implémenté)
+* Ajout d'une cubemap/skybox
 * ...
 
 <div class="embedresize">
 <div>
     <video width="560" height="315" controls>
-    <source src="assets/video/water.mp4" type="video/mp4">
+    <source src="assets/video/waterfinal.mp4" type="video/mp4">
     Your browser does not support the video tag.
     </video>
 </div>
